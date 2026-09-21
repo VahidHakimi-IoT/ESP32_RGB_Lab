@@ -11,7 +11,9 @@ Serial baud rate: 115200
 Serial Monitor Test
 The ESP32-S3 was successfully connected to Arduino IDE and programmed using the ESP32S3 Dev Module board configuration.
 The Serial Monitor was configured to 115200 baud. The test program successfully displayed serial messages from the ESP32-S3, confirming that the board was running correctly.
+
 Task A - Change the Colour
+
 I tested the onboard RGB LED using different RGB channel values.
 The LED was successfully changed to:
 Red: (50, 0, 0)
@@ -22,7 +24,9 @@ Off: (0, 0, 0)
 The same onboard RGB LED was used for all colours. The LED turned on for one second and then turned off for one second.
 Observation
 Changing the red, green, and blue channel values in neopixelWrite() changed the colour of the onboard RGB LED.
+
 Task B - Change the Blink Rate
+
 Task B: I changed both delay values from 1000 ms to 250 ms. The LED blinked much faster than in the original program. The original complete ON/OFF cycle was 2000 ms, while the modified cycle was 500 ms.
 I changed both delay values from 1000 ms to 250 ms.
 The original program had:
@@ -35,14 +39,18 @@ OFF: 250 ms
 Complete cycle: 500 ms
 Observation
 The LED blinked much faster after reducing the delays from 1000 ms to 250 ms.
+
 Task C - RGB Cycle
+
 Task C: I created a repeating RGB cycle using the onboard RGB LED. The sequence is red, green, blue, and off. Each state lasts 500 ms before changing to the next state. After the off state, the sequence repeats from red.
 I created a repeating sequence:
 Red → Green → Blue → Off
 Each state lasted 500 ms.
 Observation
 The onboard RGB LED changed from red to green, then blue, then turned off. After the off state, the sequence repeated from red.
+
 Task D - Personal LED Pattern
+
 I created a custom pattern using different colours, brightness values, and delays.
 The final pattern was:
 Red → Green → Blue → White → Off
