@@ -293,22 +293,6 @@ I also learned the difference between the Suspended and Blocked states. The LED 
 
 After entering `resume`, the LED started working again. Finally, changing the interval to `1000` ms also worked successfully. The practical test confirmed my predictions about task scheduling, suspension, resumption, and shared data.
 
-## Submission Files
-
-The project contains:
-
-```text
-src/
-└── main.cpp
-
-README.md
-```
-
-The submission also includes screenshots/photos showing:
-
-1. Normal LED operation.
-2. LED suspended while the Serial Task continues working.
-3. LED resumed and operating again.
 
 ## AI Usage
 
@@ -317,3 +301,4 @@ The submission also includes screenshots/photos showing:
 **How I used it:** I used ChatGPT to help understand FreeRTOS concepts, task states, task suspension/resumption, shared variables, and the structure of the ESP32 code.
 
 **What I verified or changed:** I uploaded and tested the code on my ESP32-S3-DevKitC-1. I tested the commands `500`, `suspend`, `250`, `resume`, and `1000` using the Serial Monitor. I also checked the physical LED behavior and confirmed that the LED stopped when suspended and started again after resuming.
+
