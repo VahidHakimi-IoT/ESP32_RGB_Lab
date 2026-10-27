@@ -45,6 +45,6 @@ The semaphore Take comes before the mutex Take in both. If a task took the mutex
 
 ## AI assistance
 
-I used Claude to explain the producer/consumer ordering, to help fill in the TODOs in the starter code, and to troubleshoot upload and Serial Monitor problems (duplicate `.ino` files, wrong code on the board). I checked the result by uploading to the ESP32-S3, reading the Serial Monitor output myself, counting the 15 consumer lines, confirming each ID appears 3 times, and confirming the `PASS` line and the 1500 ms timestamp gaps in test 2.
+I used Claude to explain the producer/consumer ordering, to help fill in the TODOs in the starter code, and to troubleshoot upload and Serial Monitor problems . I checked the result by uploading to the ESP32-S3, reading the Serial Monitor output myself, counting the 15 consumer lines, confirming each ID appears 3 times, and confirming the `PASS` line and the 1500 ms timestamp gaps in test 2.
 
 
