@@ -1,0 +1,51 @@
+Serial Monitor log, ESP32-S3, 115200 baud
+
+=== Test 1: consumer delay 400 ms ===
+v2 completed - semaphore buffer challenge
+Consumer 0 read 0 (total=1)
+Consumer 1 read 1 (total=2)
+Consumer 0 read 2 (total=3)
+Consumer 1 read 3 (total=4)
+Consumer 0 read 4 (total=5)
+Consumer 1 read 0 (total=6)
+Consumer 0 read 1 (total=7)
+Consumer 1 read 2 (total=8)
+Consumer 0 read 3 (total=9)
+Consumer 1 read 4 (total=10)
+Consumer 0 read 0 (total=11)
+Consumer 1 read 1 (total=12)
+Consumer 0 read 2 (total=13)
+Consumer 1 read 3 (total=14)
+Consumer 0 read 4 (total=15)
+TOTAL=15 expected=15 invalid=0
+Value 0: count=3 expected=3
+Value 1: count=3 expected=3
+Value 2: count=3 expected=3
+Value 3: count=3 expected=3
+Value 4: count=3 expected=3
+PASS: total and all frequencies correct
+
+=== Test 2: consumer delay 1500 ms (timestamps added) ===
+v3 test2 - consumer delay 1500 ms
+[1507 ms] Consumer 0 read 0 (total=1)
+[1507 ms] Consumer 1 read 1 (total=2)
+[3006 ms] Consumer 0 read 2 (total=3)
+[3007 ms] Consumer 1 read 3 (total=4)
+[4506 ms] Consumer 0 read 4 (total=5)
+[4507 ms] Consumer 1 read 0 (total=6)
+[6006 ms] Consumer 0 read 1 (total=7)
+[6007 ms] Consumer 1 read 2 (total=8)
+[7506 ms] Consumer 0 read 3 (total=9)
+[7507 ms] Consumer 1 read 4 (total=10)
+[9006 ms] Consumer 0 read 0 (total=11)
+[9007 ms] Consumer 1 read 1 (total=12)
+[10506 ms] Consumer 0 read 2 (total=13)
+[10507 ms] Consumer 1 read 3 (total=14)
+[12006 ms] Consumer 0 read 4 (total=15)
+TOTAL=15 expected=15 invalid=0
+Value 0: count=3 expected=3
+Value 1: count=3 expected=3
+Value 2: count=3 expected=3
+Value 3: count=3 expected=3
+Value 4: count=3 expected=3
+PASS: total and all frequencies correct
