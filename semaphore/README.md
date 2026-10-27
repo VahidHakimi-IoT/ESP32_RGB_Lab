@@ -1,1 +1,1 @@
-
+after test 1 prediction; If the buffer becomes full, emptySlots will be 0, so each producer will block at xSemaphoreTake(emptySlots, portMAX_DELAY) inside putValue() until a consumer calls xSemaphoreGive(emptySlots) at the end of getValue(). That raises the count to 1, one waiting producer takes it, and the count drops back to 0. With slower consumers I expect the run to take longer, but all 15 values should still be consumed, each ID three times.
