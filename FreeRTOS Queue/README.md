@@ -19,7 +19,7 @@ The temperature is simulated in the code, so it does not come from a real sensor
 
 When I uploaded the code to the ESP32, I could see the temperature values appearing in the Serial Monitor. The values started at 21°C and increased by 1 every second.
 
-[Add your Serial Monitor screenshot here.]
+
 
 ## Reflection
 
